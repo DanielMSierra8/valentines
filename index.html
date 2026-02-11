@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- PANTALLA 1: Landing -->
+    <div id="screen-landing" class="screen active">
+        <div class="hearts-container" id="hearts-container"></div>
+        <div class="landing-content">
+            <div class="sparkle-wrapper">
+                <h1 class="title-valentine">Valentine</h1>
+            </div>
+            <p class="subtitle-landing">Para mi solecito, mi vida</p>
+            <p class="press-key">Presiona cualquier tecla para continuar</p>
+            <div class="pulse-heart">&#10084;</div>
+        </div>
+    </div>
+
+    <!-- PANTALLA 2: Transición gatito -->
+    <div id="screen-cat" class="screen">
+        <div class="cat-scene">
+            <div class="cat-container" id="cat-container">
+                <div class="cat">
+                    <div class="cat-body">
+                        <div class="cat-tail"></div>
+                        <div class="cat-torso"></div>
+                        <div class="cat-head">
+                            <div class="cat-ear cat-ear-left"></div>
+                            <div class="cat-ear cat-ear-right"></div>
+                            <div class="cat-face">
+                                <div class="cat-eye cat-eye-left"></div>
+                                <div class="cat-eye cat-eye-right"></div>
+                                <div class="cat-nose"></div>
+                                <div class="cat-mouth"></div>
+                            </div>
+                        </div>
+                        <div class="cat-leg cat-leg-front-left"></div>
+                        <div class="cat-leg cat-leg-front-right"></div>
+                        <div class="cat-leg cat-leg-back-left"></div>
+                        <div class="cat-leg cat-leg-back-right"></div>
+                    </div>
+                    <div class="cat-heart-trail" id="cat-hearts"></div>
+                </div>
+            </div>
+            <div class="cat-message">
+                <span class="cat-text">Tengo algo que preguntarte...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANTALLA 3: La pregunta -->
+    <div id="screen-question" class="screen">
+        <div class="floating-hearts" id="floating-hearts"></div>
+        <div class="question-card">
+            <div class="card-glow"></div>
+            <div class="card-content">
+                <div class="question-icon">&#128149;</div>
+                <h2 class="question-title">&iquest;Quieres ser mi Valentine?</h2>
+                <p class="question-subtitle">Di que s&iacute;... por favor</p>
+                <div class="buttons-container">
+                    <button id="btn-yes" class="btn btn-yes">
+                        <span>&#10084;</span> &iexcl;S&iacute;! <span>&#10084;</span>
+                    </button>
+                    <button id="btn-no" class="btn btn-no">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANTALLA 4: Agradecimiento -->
+    <div id="screen-thanks" class="screen">
+        <div class="confetti-container" id="confetti-container"></div>
+        <div class="thanks-content">
+            <div class="thanks-hearts-burst" id="thanks-burst"></div>
+            <h2 class="thanks-title">&iexcl;Sab&iacute;a que dir&iacute;as que s&iacute;!</h2>
+            <div class="thanks-heart-big">&#10084;</div>
+            <p class="thanks-message">Te amo infinitamente</p>
+            <p class="thanks-message-2">Eres la mejor del mundo, mi vida</p>
+            <p class="thanks-message-3">Cada d&iacute;a a tu lado es el mejor regalo, solecito</p>
+            <div class="thanks-emoji-row">
+                <span>&#128149;</span><span>&#10024;</span><span>&#128144;</span><span>&#10024;</span><span>&#128149;</span>
+            </div>
+            <p class="thanks-forever">Por siempre y para siempre</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
